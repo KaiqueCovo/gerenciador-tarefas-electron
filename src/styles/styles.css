@@ -20,7 +20,6 @@ div {
 }
 
 input {
-  flex: 1; /* Ocupa espaço disponível */
   padding: 10px; /* Espaçamento interno */
   font-size: 16px; /* Tamanho da fonte */
 }
@@ -42,4 +41,10 @@ li {
   display: flex; /* Layout em linha */
   justify-content: space-between; /* Espaço entre texto e botão */
   align-items: center; /* Alinha verticalmente */
+}
+
+
+.tarefa-concluida {
+  color: green; /* Cor do texto */
+  text-decoration: line-through; /* Texto riscado */
 }
