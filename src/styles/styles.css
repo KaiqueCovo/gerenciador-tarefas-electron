@@ -1,50 +1,104 @@
 * {
-  margin: 0;  /* Espaçamentos externos */
-  padding: 0; /* Espaçamentos internos */
-  box-sizing: border-box; /* Tamanho da caixa */
+  margin: 0;
+  /* Espaçamentos externos */
+  padding: 0;
+  /* Espaçamentos internos */
+  box-sizing: border-box;
+  /* Tamanho da caixa */
 }
 
 body {
-  font-family: Arial, sans-serif; /* Fonte da página */
-  background: #f2f2f2; /* Cor de fundo */
-  margin: 0; /* Remove margens */
-  padding: 20px; /* Espaçamento interno */
+  font-family: Arial, sans-serif;
+  /* Fonte da página */
+  background: #f2f2f2;
+  /* Cor de fundo */
+  margin: 0;
+  /* Remove margens */
+  padding: 20px;
+  /* Espaçamento interno */
 }
 
 div {
-  max-width: 400px; /* Largura máxima do container */
-  margin: auto; /* Centraliza */
-  background: #FFF; /* Fundo branco */
-  padding: 20px;  /* Espaçamento interno */
-  border-radius: 8px; /* Cantos arredondados */
+  max-width: 400px;
+  /* Largura máxima do container */
+  margin: auto;
+  /* Centraliza */
+  background: #FFF;
+  /* Fundo branco */
+  padding: 20px;
+  /* Espaçamento interno */
+  border-radius: 8px;
+  /* Cantos arredondados */
+}
+
+#logo-app {
+  width: 100px;
+  /* Largura do logo */
+  margin: auto;
+  /* Centraliza o logo */
+  display: block;
+  /* Exibe como bloco */
 }
 
 input {
-  padding: 10px; /* Espaçamento interno */
-  font-size: 16px; /* Tamanho da fonte */
+  padding: 10px;
+  /* Espaçamento interno */
+  font-size: 16px;
+  /* Tamanho da fonte */
 }
 
 button {
-  padding: 10px; /* Espaçamento interno do botão */
-  margin-left: 10px; /* Espaço entre input e botão */
-  font-size: 16px; /* Tamanho da fonte */
+  padding: 10px;
+  /* Espaçamento interno do botão */
+  margin-left: 10px;
+  /* Espaço entre input e botão */
+  font-size: 16px;
+  /* Tamanho da fonte */
 }
 
 ul {
-  margin-top: 20px; /* Espaço acima da lista */
+  margin-top: 20px;
+  /* Espaço acima da lista */
 }
 
 li {
-  list-style: none; /* Remove bolinha da lista */
-  padding: 10px; /* Espaçamento interno */
-  border-bottom: 1px solid #ddd; /* Linha divisória */
-  display: flex; /* Layout em linha */
-  justify-content: space-between; /* Espaço entre texto e botão */
-  align-items: center; /* Alinha verticalmente */
+  list-style: none;
+  /* Remove bolinha da lista */
+  padding: 10px;
+  /* Espaçamento interno */
+  border-bottom: 1px solid #ddd;
+  /* Linha divisória */
+  display: flex;
+  /* Layout em linha */
+  justify-content: space-between;
+  /* Espaço entre texto e botão */
+  align-items: center;
+  /* Alinha verticalmente */
 }
 
 
 .tarefa-concluida {
-  color: green; /* Cor do texto */
-  text-decoration: line-through; /* Texto riscado */
+  color: green;
+  /* Cor do texto */
+  text-decoration: line-through;
+  /* Texto riscado */
+}
+
+#modal-sucesso {
+  position: fixed;
+  bottom: -156px;
+  right: 20px;
+  display: flex;
+  box-shadow: 0px 0px 14px;
+  
+  transition: all 1s;
+}
+
+#modal-sucesso img {
+  width: 100px;
+}
+
+.open-modal {
+  transition: all 1s;
+  bottom: 40px !important;
 }
